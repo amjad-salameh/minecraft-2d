@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Minecraft 2D</title>
+  </head>
+  <body>
+    <div id="land-page">
+      <h1 id="mincraft">Minecraft Game 2D</h1>
+      <div class="instructions">
+        <h1>How To Play</h1>
+        <div class="tools">
+          <div>Choose The Tool</div>
+          <div class="land-el land-el-axe">
+            <img
+              src="https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/256x256/axe.png"
+              alt="AXE" width="50px"
+            />
+            <h6>AXE</h6>
+          </div>
+          <div class="land-el land-el-pickaxe">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh0G3T2TpIOtQBBUrNbPneZsIadzCLMwJXuipk48o4-gHLc3rEJfG6uXYmRNefT1xrAe8&usqp=CAU"
+              alt="PICKAXE" width="50px"
+            />
+            <h6>PICKAXE</h6>
+          </div>
+          <div class="land-el land-el-shovel">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/4360/4360026.png"
+              alt="SHOVEL" width="50px"
+            />
+            <h6>SHOVEL</h6>
+          </div>
+        </div>
+        <div class="tools">
+          <div>Collect Elements</div>
+          <div class="two-boxes">
+            <div class="land-el wood"></div>
+            <div class="land-el leaves"></div>
+          </div>
+          <div class="land-el stone"></div>
+          <div>
+            <div class="land-el grass"></div>
+          </div>
+        </div>
+        <button class="start-btn" type="submit">START The Game</button>
+      </div>
+    </div>
+
+    <div id="world">
+      <div class="main"></div>
+      <div class="game-elements">
+        <h3>Inventory</h3>
+        <div class="tools">
+          <div class="tool axe">
+            <img
+              src="https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/256x256/axe.png"
+              alt="AXE"
+            />
+            <h4>AXE</h4>
+          </div>
+          <div class="tool pickaxe">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh0G3T2TpIOtQBBUrNbPneZsIadzCLMwJXuipk48o4-gHLc3rEJfG6uXYmRNefT1xrAe8&usqp=CAU"
+              alt="PICKAXE"
+            />
+            <h4>PICKAXE</h4>
+          </div>
+          <div class="tool shovel">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/4360/4360026.png"
+              alt="SHOVEL"
+            />
+            <h4>SHOVEL</h4>
+          </div>
+        </div>
+        <h3>Elements</h3>
+        <div class="storage">
+          <div>
+            <h5>Grass</h5>
+            <div class="storage-box grass storage-box-grass">0</div>
+          </div>
+          <div>
+            <h5>Leaves</h5>
+            <div class="storage-box leaves storage-box-leaves">0</div>
+          </div>
+          <div>
+            <h5>Wood</h5>
+            <div class="storage-box wood storage-box-wood">0</div>
+          </div>
+          <div>
+            <h5>Stone</h5>
+            <div class="storage-box stone storage-box-stone">0</div>
+          </div>
+          <div>
+            <h5>Soil</h5>
+            <div class="storage-box soil storage-box-soil">0</div>
+          </div>
+        </div>
+        <button class="reset-game" type="submit">RESET GAME</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

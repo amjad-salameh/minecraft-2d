@@ -1,0 +1,208 @@
+@font-face {
+  font-family: "minecraft";
+  src: url("/font/Minecraft.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "minecraft";
+}
+#mincraft {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  color: #0ca14f;
+  font-size: 20px;
+}
+.axe,
+.piskaxe,
+.shovel {
+  width: 60px;
+  height: 60px;
+  font-size: 12px;
+}
+.main > div:hover {
+  border: 1px solid black;
+}
+.sky {
+  background-color: #8dbfff;
+}
+.cloud {
+  background: url("https://st.depositphotos.com/1339671/2004/i/450/depositphotos_20047625-stock-illustration-cloud-isolated.jpg")
+    no-repeat center center/cover;
+}
+.grass {
+  background: url("https://i.pinimg.com/736x/78/b9/69/78b9699d96f18b8da617acb368682515.jpg")
+    no-repeat center center/cover;
+}
+.leaves {
+  background: url("https://lh3.googleusercontent.com/J-kF34-_MgyYjaQoNc8LIFv-ZX2WwOtT3WwtC8dnaYimI0pBpjUlblpTW6gx50NlzALl4iO6PXSPNMm4LMEc9fQ3DIEx_soTT8hn=s400")
+    no-repeat center center/cover;
+}
+.wood {
+  background: url("https://i1.sndcdn.com/artworks-TmwCvUkAiZehKvVv-MQGQHA-t500x500.jpg")
+    no-repeat center center/cover;
+}
+.stone {
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcKb1ENuYobCYhPPhfFFnk7jggmAmOb6VytAnzQTeRKw&s")
+    no-repeat center center/cover;
+}
+.soil {
+  background: url("https://d31sxl6qgne2yj.cloudfront.net/wordpress/wp-content/uploads/20190102094851/Minecraft-Dirt-Block.jpg")
+    no-repeat center center/cover;
+}
+.axe,
+.pickaxe,
+.shovel,
+.land-el-axe,
+.land-el-pickaxe,
+.land-el-shovel {
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.land-el {
+  width: 60px;
+  height: 60px;
+}
+land-el img {
+  width: 80%;
+}
+.axe > img,
+.pickaxe > img,
+.shovel > img {
+  width: 80%;
+}
+.stroage-box {
+  border: 1px solid #fff;
+  width: 50px;
+  height: 50px;
+}
+
+#land-page {
+  background: url("https://feedback.minecraft.net/hc/article_attachments/4402428141581/mceclip0.png")
+    no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.instructions {
+  background: #000;
+  width: 80%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+}
+.instructions .tools {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+#land-page button {
+  background-color: #6f6f6f;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+  width: 80%;
+  border: none;
+}
+
+#world {
+  display: none;
+  height: 100vh;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+}
+.game-elements {
+  min-width: 155px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  background: #000;
+}
+.reset-world,
+.reset-game {
+  width: 80%;
+  padding: 10px;
+  color: #fff;
+  background: firebrick;
+}
+.storage {
+  text-align: center;
+}
+.two-boxes {
+  margin-left: -40px;
+}
+@media only screen and (max-width: 650px) {
+  #land-page {
+    background: url("https://forum-files-playcanvas-com.s3.dualstack.eu-west-1.amazonaws.com/original/3X/7/9/79c94b39d6e33d57734b82e4f8293c0c9d3f9b85.jpeg") no-repeat center center;
+  }
+  .instructions {
+    display: none;
+  }
+}
+@media only screen and (min-width: 650px) and (max-width: 850px) {
+  #mincraft {
+    font-size: 16px;
+  }
+  .instructions > h1 {
+    font-size: 20px;
+  }
+  #land-page button {
+    width: 60%;
+    padding: 10px;
+  }
+  .land-el {
+    width: 50px;
+    height: 50px;
+  }
+  .land-el.stone {
+    margin-left: 20px;
+  }
+  .land-el.grass {
+    margin-right: 12px;
+  }
+  .two-boxes {
+    display: flex;
+  }
+  .tool {
+    width: 55px;
+    height: 50px;
+  }
+  .tools {
+    display: flex;
+  }
+  .storage {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .storage > div {
+    padding: 3px;
+  }
+  .pickaxe {
+    margin: 0 5px;
+  }
+  .main > div:hover {
+    border: none;
+  }
+}
