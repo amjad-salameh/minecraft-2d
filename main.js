@@ -44,23 +44,19 @@ const restart = () => {
   landPage.style.display = "none";
   world.style.display = "flex";
   matrixBuilder(20, 30);
-  //* inject explaining - row,untilRow,col(default = left screen),untilCol(default = right screen),element
   inject("grass", 15, 16);
   inject("soil", 16, 20);
   inject("wood", 12, 15, 23, 24);
   inject("stone", 12, 15, 11, 14);
   inject("leaves", 13, 14, 12, 13);
 
-  //* Creating side stones with for loop
   for (let i = 0; i < 4; i++) {
     inject("stone", 11 + i, 15, 0 + i, 1 + i);
   }
 
-  //* Creating clouds (row,untilRow,col,untilCol)
   createClouds(3, 5, 4, 6);
   createClouds(2, 4, 17, 21);
 
-  //* Creating Tree-Leaves (row,untilRow,col,untilCol)
   createLeaves(8, 12, 23, 24);
 };
 
